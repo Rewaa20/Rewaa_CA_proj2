@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+
+<body>
+    <h1>Rock - Paper - Scissor</h1>
+    <div class="container">
+        <div class="ring">
+            <div class="game">
+                <div class="computer"><p>computer</p><div id="computer">✊</div></div>
+                <div class="player">
+                    <div><p>you</p><div id="player">✊</div></div>
+                </div>
+                <div class="options">
+                    <button id="rock" onclick="player(event)" value="rock">✊</button>
+                    <button id="paper" onclick="player(event)" value="paper">🖐️</button>
+                    <button id="scissor" onclick="player(event)" value="scissor">✌</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="result">who is winner?</div>
+        <button class="reset" onclick="reset()">Play again</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
